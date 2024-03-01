@@ -1,11 +1,9 @@
 #pragma once
 #include <iostream>
+#include <vector>
 using namespace std;
 
-#define BIG_LINE_LENGTH 40
-#define BIG_LINE_SYMBOL '='
-#define SMALL_LINE_LENGTH BIG_LINE_LENGTH
-#define SMALL_LINE_SYMBOL '-'
+#include "Data/Data.h"
 
 /// <summary>
 /// Interface that will be used by every entity that can be "drawn"
@@ -19,4 +17,8 @@ public:
 	/// Virtual function that will be used to draw the element
 	/// </summary>
 	virtual void Draw()=0;
+protected:
+	void PrintLine();
+	void PrintLine(string word);
+	void PrintLine(string words[], int size);
 }; 

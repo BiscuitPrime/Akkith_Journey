@@ -18,20 +18,20 @@ int Inventory::AddItem(Item* item)
 /// <summary>
 /// Function used to draw the inventory
 /// </summary>
-void Inventory::Draw() //TODO : all the cout<< [...] <<endl could be replaced by a function/define to avoid unending repetition
+void Inventory::Draw()
 {
-	std::string lineStr = std::string(BIG_LINE_LENGTH, BIG_LINE_SYMBOL);
-	std::string smlLineStr = std::string(SMALL_LINE_LENGTH, SMALL_LINE_SYMBOL);
-	cout << lineStr << endl;
-	cout << "Player Inventory : " << endl;
-	cout << "" << endl;
+	PrintLine(BIG_LINE);
+	PrintLine(INVENTORY_TITLE);
+	PrintLine();
 	for (Item* item : _items) 
 	{
-		cout << smlLineStr << endl;
-		cout << "Item : " << item->GetName() << endl;
-		cout << "Description : " << item->GetDescription() << endl;
-		cout << smlLineStr << endl;
-		cout << "" << endl;
+		PrintLine(SMALL_LINE);
+		string words[] = { ITEM_INVENTORY_NAME_TITLE, item->GetName() };
+		PrintLine(words,2);
+		string words2[] = { ITEM_INVENTORY_DESCRIPTION_TITLE, item->GetName() };
+		PrintLine(words2, 2);
+		PrintLine(SMALL_LINE);
+		PrintLine();
 	}
-	cout << lineStr << endl;
+	PrintLine(BIG_LINE);
 }
