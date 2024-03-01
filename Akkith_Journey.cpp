@@ -8,6 +8,8 @@ using namespace std;
 //Main game sequence :
 int main()
 {
+	//TODO : MAIN SHOULDN'T PRINT ANYTHING => Only Drawable-derived classes should print
+
 	cout << GAME_NAME <<" Game Beginning" << endl; //TODO : REMOVE
 	
 	Player player = Player(0, "Player");

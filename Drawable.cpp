@@ -1,7 +1,7 @@
 #include "Drawable.h"
 
 /// <summary>
-/// Function that will print out a line of input words
+/// Function that will print out a line
 /// </summary>
 void Drawable::PrintLine()
 {
@@ -9,7 +9,7 @@ void Drawable::PrintLine()
 }
 
 /// <summary>
-/// Function that will print out a line of input words
+/// Function that will print out a line with the input word
 /// </summary>
 /// <param name="word"> : String : the word we want to print on a line</param>
 void Drawable::PrintLine(string word)
@@ -18,7 +18,7 @@ void Drawable::PrintLine(string word)
 }
 
 /// <summary>
-/// Function that will print out a line of input words
+/// Function that will print out a line of multiple input words
 /// </summary>
 /// <param name="words"> : String[] : the words we want to print on a line in order</param>
 /// <param name="size"> : int : size of the input array</param>
