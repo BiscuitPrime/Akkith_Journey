@@ -11,6 +11,7 @@ protected:
 	std::string _name;
 public:
 	Actor(int nid, std::string name);
+	~Actor();
 	int GetId() { return _id; }
 	std::string GetName() { return _name; }
 };

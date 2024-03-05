@@ -12,7 +12,7 @@ endif()
 project ("Akkith_Journey")
 
 # Ajoutez une source à l'exécutable de ce projet.
-add_executable (Akkith_Journey "Akkith_Journey.cpp" "Akkith_Journey.h" "Actors/Actor.h" "Actors/Actor.cpp" "Actors/Player.h" "Actors/Player.cpp" "Inventory/Items/Item.h" "Inventory/Items/Item.cpp" "Inventory/Inventory.h" "Inventory/Inventory.cpp" "Utils/Drawable.h" "Data/Data.h" "Utils/Drawable.cpp" "Input/PlayerInputHandler.h" "Input/PlayerInputHandler.cpp"   "Utils/Utils.h" "Utils/Utils.cpp")
+add_executable (Akkith_Journey "Akkith_Journey.cpp" "Akkith_Journey.h" "Actors/Actor.h" "Actors/Actor.cpp" "Actors/Player.h" "Actors/Player.cpp" "Inventory/Items/Item.h" "Inventory/Items/Item.cpp" "Inventory/Inventory.h" "Inventory/Inventory.cpp" "Utils/Drawable.h" "Data/Data.h" "Utils/Drawable.cpp" "Input/PlayerInputHandler.h" "Input/PlayerInputHandler.cpp"   "Utils/Utils.h" "Utils/Utils.cpp" "Events/Event.h" "Events/Event.cpp" "System/GameManager.h" "System/GameManager.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Akkith_Journey PROPERTY CXX_STANDARD 20)
