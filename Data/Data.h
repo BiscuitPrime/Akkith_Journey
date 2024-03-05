@@ -41,3 +41,18 @@
 #define ITEM_INVENTORY_NAME_TITLE (START_PARAGRAPHE_SYMBOL SPACE_SEPARATOR ITEM_GENERIC_NAME DOUBLE_SEPARATOR)
 #define ITEM_INVENTORY_DESCRIPTION_TITLE (ITEM_GENERIC_DESCRIPTION_NAME DOUBLE_SEPARATOR)
 // --------------------------------------------------
+
+// Statistics ---------------------------------------
+#define STATISTICS_NAME "Statistics"
+// --------------------------------------------------
+
+// Player Input -------------------------------------
+#define INPUT_REQUEST_GENERIC "Please press a key to continue..."
+#define INPUT_REQUEST_INTRO "Please press "
+#define INPUT_REQUEST_OUTRO " to continue..." 
+#define INPUT_SELECTION_GENERIC "Please select an option :"
+#define INPUT_INVENTORY_KEY "E"
+#define INPUT_STATISTICS_KEY "A"
+#define INPUT_INVENTORY_SELECTION_TEXT (INVENTORY_NAME DOUBLE_SEPARATOR INPUT_INVENTORY_KEY)
+#define INPUT_STATISTICS_SELECTION_TEXT (STATISTICS_NAME DOUBLE_SEPARATOR INPUT_STATISTICS_KEY)
+// --------------------------------------------------

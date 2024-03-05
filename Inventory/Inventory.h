@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include "Items/Item.h"
-#include "../Drawable.h"
+#include "../Utils/Drawable.h"
 
 /// <summary>
 /// Class that will represent the inventory of the player.

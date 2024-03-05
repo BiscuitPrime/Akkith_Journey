@@ -4,6 +4,7 @@ using namespace std;
 #include "Actors/Player.h"
 #include "Inventory/Items/Item.h"
 #include "Data/Data.h"
+#include "Input/PlayerInputHandler.h"
 
 //Main game sequence :
 int main()
@@ -22,6 +23,12 @@ int main()
 	player.GetInventory()->AddItem(&new_item2);
 
 	player.GetInventory()->Draw(); //in the game itself, if we wanna display something, we should ALWAYS use a draw function (that comes from Drawable.h)
+
+	auto inputHandler = PlayerInputHandler();
+
+	inputHandler.RequestPlayerInput("E");
+
+	inputHandler.RequestPlayerInputSelection();
 
 	return 0;
 }
